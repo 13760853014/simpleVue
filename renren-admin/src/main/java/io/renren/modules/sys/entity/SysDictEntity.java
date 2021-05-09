@@ -13,6 +13,7 @@ import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 
@@ -51,6 +52,7 @@ public class SysDictEntity implements Serializable {
 	/**
 	 * 排序
 	 */
+	@Digits(integer = 3, fraction = 0)
 	private Integer orderNum;
 	/**
 	 * 备注
